@@ -1,0 +1,33 @@
+body{
+    /* box-sizing: border-box; */
+    font-family: "Segoe Script", 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: white;
+    /* margin: 0;
+    padding: 0; */
+}
+header a{
+    text-decoration: none;
+    color: white;
+}
+.index{
+    background-color:#273141 ;
+    /* position: relative; */
+}
+/* .index-main{
+   min-height: 90vh;
+} */
+.index-nav{
+    background-color: white;
+    font: bold 18px  "Segoe Script";
+    color:#273141 ;
+    border: 1px solid;
+    padding: 5px;
+    width: 100px;
+    text-decoration: none;
+    border-radius: 20px;
+}
+sup{
+    font-size: 12px;
+    top: -1.5em;
+    right: 1.5em;
+}

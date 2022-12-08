@@ -1,5 +1,10 @@
+@font-face {
+    font-family: 'Kalam', cursive;
+    src: url("https://fonts.googleapis.com/css2?family=Kalam:wght@700&display=swap");
+}
+
 body{
-    font-family: "Segoe Script", 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-family: 'Kalam', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     color: white;
 }
 .index header a{
@@ -11,7 +16,7 @@ body{
 }
 .index-nav{
     background-color: white;
-    font: bold 18px  "Segoe Script";
+    font: bold 18px  'Kalam';
     color:#273141 ;
     border: 1px solid;
     padding: 5px;
@@ -22,7 +27,7 @@ body{
 sup{
     font-size: 12px;
     top: -1.5em;
-    right: 1.5em;
+    right: 1em;
 }
 
 /*------------------- Name Page ----------------------------- */
@@ -76,6 +81,8 @@ nav li a{
 }
 #download-btn{
     background-color: #273141;
+    text-decoration: none;
+    color: white;
 }
 #sidebar{
     background-color: #273141;
@@ -85,4 +92,21 @@ nav li a{
 }
 #indicator1, #indicator2, #indicator3{
     background-color: #273141;
+}
+
+/**---------------------------- Project Page ---------------------------**/
+
+.project-body header a{
+    text-decoration: none;
+    color: #273141;
+}
+.projects{
+    margin-top: 5rem;
+}
+.projects h3,.projects h4, .projects p{
+    color: #273141;
+}
+.projects .card{
+    box-shadow: 0px 0px 5px #273141;
+
 }

@@ -81,6 +81,8 @@ nav li a{
 }
 #download-btn{
     background-color: #273141;
+}
+.btn-text{
     text-decoration: none;
     color: white;
 }
@@ -109,4 +111,18 @@ nav li a{
 .projects .card{
     box-shadow: 0px 0px 5px #273141;
 
+}
+.github-icon{
+    background-color: #273141;
+}
+.live-site{
+    background-color: #273141;
+}
+
+/**---------------------------------Media Queries --------------------**/
+
+@media screen  and (max-width:991px) {
+    .name-main-fdiv{
+        height:100%; 
+    }
 }

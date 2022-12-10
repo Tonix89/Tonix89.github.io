@@ -105,7 +105,6 @@ nav li a{
 /**---------------------------- Typewriter Effect----------------**/
 .typewrite{
     color: #fff;
-    text-decoration: none;
     
 }
 .typewrite .wrap{

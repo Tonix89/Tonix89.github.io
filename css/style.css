@@ -7,9 +7,12 @@ body{
     font-family: 'Kalam', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     color: white;
 }
-.index header a{
+.index header a, .contact-btn{
     text-decoration: none;
     color: white;
+}
+.contact-btn:hover{
+    color: #0d6efd;
 }
 .index{
     background-color:#273141 ;
@@ -41,7 +44,7 @@ sup{
     height:100vh; 
     max-width: 300px;
 }
-.profile-pic img{
+#mypic{
     height: 100px;
     border-radius: 50%;
     border: 2px solid white;
@@ -78,6 +81,9 @@ nav li a{
 }
 .nav-active{
     text-decoration: underline;
+}
+.email{
+    text-decoration: none;
 }
 #download-btn{
     background-color: #273141;
@@ -119,6 +125,21 @@ nav li a{
     background-color: #273141;
 }
 
+/**---------------------------------Contact Page---------------------**/
+
+.contact{
+    background-color: #273141;
+    max-width: fit-content;
+    max-height: fit-content;
+}
+.required{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+.formError{
+    display: none;
+}
 /**---------------------------------Media Queries --------------------**/
 
 @media screen  and (max-width:991px) {

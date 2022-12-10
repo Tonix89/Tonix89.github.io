@@ -17,7 +17,7 @@ body{
 .index{
     background-color:#273141 ;
 }
-.index-nav{
+.index-nav a{
     background-color: white;
     font: bold 18px  'Kalam';
     color:#273141 ;

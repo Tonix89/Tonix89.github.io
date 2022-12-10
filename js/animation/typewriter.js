@@ -1,9 +1,16 @@
 const textCont = document.getElementsByClassName("typewrite");
-const textData = [
+const game = document.getElementsByClassName("typewrite-game");
+const index = document.getElementsByClassName("typewrite-index");
+console.log(game.length);
+console.log(index.length);
+
+const textData1 = [
   "Hi, I'm a Front-End Developer.",
   "Hei, Jeg er front-end Utvikler.",
   "Uy, Front-end developer diay ko.",
 ];
+
+const textData2 = ["Sorry, This page is under construction."];
 
 window.onload = function () {
   for (let i = 0; i < textCont.length; i++) {
@@ -21,6 +28,15 @@ myFunction = function (textContainer) {
 };
 
 myFunction.prototype.type = function () {
+  let textData = "";
+  let indexPage = false;
+  if (game.length === 1 && index.length === 0) {
+    console.log("yes");
+    textData = textData2;
+  } else {
+    textData = textData1;
+    indexPage = true;
+  }
   const sentence = textData[this.initialLoop % textData.length];
 
   if (this.textDeleting) {
@@ -39,8 +55,13 @@ myFunction.prototype.type = function () {
   }
 
   if (!this.textDeleting && this.text === sentence) {
-    typeSpeed = this.reverseAfter;
-    this.textDeleting = true;
+    if (indexPage) {
+      typeSpeed = this.reverseAfter;
+      this.textDeleting = true;
+    } else {
+      typeSpeed = this.reverseAfter;
+      this.textDeleting = false;
+    }
   } else if (this.textDeleting && this.text === "") {
     this.textDeleting = false;
     this.initialLoop++;

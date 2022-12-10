@@ -103,10 +103,10 @@ nav li a{
 }
 
 /**---------------------------- Typewriter Effect----------------**/
-.typewrite{
+/* .typewrite{
     color: #fff;
     
-}
+} */
 .typewrite .wrap{
     border-right: 0.3em solid #fff;
 }

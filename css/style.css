@@ -102,6 +102,16 @@ nav li a{
     background-color: #273141;
 }
 
+/**---------------------------- Typewriter Effect----------------**/
+.typewrite{
+    color: #fff;
+    text-decoration: none;
+    
+}
+.typewrite .wrap{
+    border-right: 0.3em solid #fff;
+}
+
 /**---------------------------- Project Page ---------------------------**/
 
 .project-body header a{

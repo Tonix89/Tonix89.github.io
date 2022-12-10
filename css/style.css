@@ -103,13 +103,16 @@ nav li a{
 }
 
 /**---------------------------- Typewriter Effect----------------**/
-/* .typewrite{
-    color: #fff;
-    
+/* .typewrite .wrap{
+    border-right: 0.3em solid #fff;
 } */
 .typewrite .wrap{
-    border-right: 0.3em solid #fff;
-}
+    animation:blinkTextCursor 500ms steps(44) infinite normal;
+  }
+  @keyframes blinkTextCursor{
+    from{border-right: 0.2em solid #fff;}
+    to{border-right:0.2em solid transparent;}
+  }
 
 /**---------------------------- Project Page ---------------------------**/
 

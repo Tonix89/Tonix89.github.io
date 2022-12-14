@@ -18,16 +18,31 @@
         <a href="index.html"><h1 class="pt-3">Tonix <sup>portfolio</sup></h1></a>
     </header>
 
-    <main class=" flex-grow-1 text-center">
-        <h2 class="typewrite typewrite-game">
+    <main class="d-flex flex-column flex-grow-1 text-center">
+        <!-- <h2 class="typewrite typewrite-game">
             <span class="wrap"></span>
-        </h2>
+        </h2> -->
+        <h2>Select Game</h2>
+        <div class="d-flex flex-md-row flex-column game">
+            <div class="d-flex flex-column justify-content-between card p-3 me-md-2 mb-2" style="width:400px;">
+                <img src="images/suduko.png" alt="" style="height:300px;">
+                <h3 class="text-bg-light mt-1">SUDOKU</h3>
+                <p  class="text-bg-light">Unlock informations about me each level.</p>
+                <button><a href="sudoku.html">Play Now</a></button>
+            </div>
+            <div class="d-flex flex-column justify-content-between card p-3 ms-md-2 mb-2" style="width:400px;">
+                <img src="images/chess.png" alt="" style="height:300px;">
+                <h3  class="text-bg-light mt-1">CHESS</h3>
+                <p  class="text-bg-light">Ask me question directly while we are playing chess.</p>
+                <button><a href="">Booked Appoinment</a></button>
+            </div>
+        </div>
     </main>
 
-     <footer>
-        <p>Copyright &copy; Tonix2022</p>
+    <footer class="text-center mt-3">
+        <p class="mb-0">Copyright &copy; Tonix2022</p>
         <p>All rights reserved.</p>
     </footer>
-    <script src="js/animation/typewriter.js"></script>
+    <!-- <script src="js/animation/typewriter.js"></script> -->
 </body>
 </html>

@@ -35,7 +35,7 @@ sup{
 
 /*------------------- Name Page ----------------------------- */
 
-.name header a{
+.name header a, .game button a{
  text-decoration: none;
  color: #273141;
 }
@@ -137,25 +137,129 @@ nav li a{
     background-color: #273141;
 }
 
-/**---------------------------------Contact Page---------------------**/
+/**---------------------------------Sudoku ----------------------*/
 
-.contact{
-    background-color: #273141;
-    max-width: fit-content;
-    max-height: fit-content;
+hr {
+    max-width: 500px;
 }
-.required{
+#board1, #board2, #board3, #board4, #board5, #board6{
+    width: 440px;
+    height: 430px;
+
+    margin: 0 auto;
+}
+#board1{
     display: flex;
-    flex-direction: row;
+    flex-wrap: wrap;
+}
+#board2,#board2, #board3, #board4, #board5, #board6, #board7{
+    display: none;
+    flex-wrap: wrap;
+}
+#loader{
+    display: flex;
+}
+.tile {
+    width: 48px; 
+    height: 48px;
+    border: 1px solid white;
+
+    /* Text */
+    font-size: 20px;
+    font-weight: bold;
+    
+    color: white;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
     align-items: center;
 }
-.formError{
-    display: none;
+#digits {
+    width: 450px;
+    height: 50px;
+
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
 }
+
+.number {
+    width: 45px; 
+    height: 45px;
+    border: 1px solid white;
+    margin: 2px;
+
+    /* Text */
+    font-size: 20px;
+    font-weight: bold;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.hideDigit{
+visibility: hidden;
+}
+.number-selected {
+    background-color: gray;
+}
+
+.tile-start {
+    background-color: black;
+}
+
+.horizontal-line {
+    border-bottom: 5px solid white;
+}
+
+.vertical-line {
+    border-right: 5px solid white;
+}
+.modal-title, .modal-body{
+    color: #273141;
+}
+.modal-cont label img{
+    width: 25px;
+}
+.modal-btn-lock-1, .modal-btn-lock-2, .modal-btn-lock-3, .modal-btn-lock-4, .modal-btn-lock-5, .modal-btn-lock-6{
+    display: block;
+    background-color: #273141;
+    border: 1px solid #fff;
+}
+.modal-btn-unlock-1, .modal-btn-unlock-2, .modal-btn-unlock-3,.modal-btn-unlock-4, .modal-btn-unlock-5, .modal-btn-unlock-6{
+    display: none;
+    background-color: #273141;
+    border: 1px solid #fff;
+}
+
 /**---------------------------------Media Queries --------------------**/
 
 @media screen  and (max-width:991px) {
     .name-main-fdiv{
         height:100%; 
+    }
+}
+
+@media screen  and (max-width:450px) {
+    #board1,  #board2{
+        width: 230px;
+        height: 225px;
+    }
+    .tile {
+        width: 25px;
+        height: 25px;
+        font-size: 12px;
+    }
+    #digits {
+        width: 245px;
+        height: 25px;
+    }
+    .number {
+        width: 25px;
+        height: 25px;
+        margin: 1px;
+        font-size: 12px;
+    }
+    .modal-cont label img{
+        width: 18px;
     }
 }

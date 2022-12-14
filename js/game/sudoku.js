@@ -24,6 +24,7 @@ async function apiCall() {
     // console.log(typeof preFilledTiles);
 
     if (level === 7) {
+      document.getElementById("loader").style.display = "none";
       document.getElementById("digits").style.display = "none";
       document.querySelector(".level").style.display = "none";
       document.querySelector(".errors").style.display = "none";

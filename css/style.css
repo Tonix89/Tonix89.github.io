@@ -152,7 +152,7 @@ hr {
     display: flex;
     flex-wrap: wrap;
 }
-#board2,#board2, #board3, #board4, #board5, #board6, #board7{
+#board2, #board3, #board4, #board5, #board6, #board7{
     display: none;
     flex-wrap: wrap;
 }
@@ -239,14 +239,14 @@ visibility: hidden;
     }
 }
 
-@media screen  and (max-width:450px) {
-    #board1,  #board2{
-        width: 230px;
-        height: 225px;
+@media screen  and (max-width:585px) {
+    #board1,  #board2, #board3, #board4, #board5, #board6, #board7{
+        width: 330px;
+        height: 315px;
     }
     .tile {
-        width: 25px;
-        height: 25px;
+        width: 36px;
+        height: 36px;
         font-size: 12px;
     }
     #digits {

@@ -163,11 +163,7 @@ hr {
     width: 48px; 
     height: 48px;
     border: 1px solid white;
-
-    /* Text */
-    font-size: 20px;
-    font-weight: bold;
-    
+    font: bold 30px "Segoe ui","Tahoma";
     color: white;
     display: flex;
     flex-wrap: wrap;
@@ -188,10 +184,7 @@ hr {
     height: 45px;
     border: 1px solid white;
     margin: 2px;
-
-    /* Text */
-    font-size: 20px;
-    font-weight: bold;
+    font: bold 30px "Segoe ui","Tahoma";
     display: flex;
     justify-content: center;
     align-items: center;
@@ -231,6 +224,26 @@ visibility: hidden;
     border: 1px solid #fff;
 }
 
+/**-------------------------------- Booked Appoinment---------------**/
+.formError{
+    display: none;
+    color: red;
+}
+/* .required label{
+    display: flex;
+    flex-direction: column;
+    font-family: 'Segoe UI Bold', Tahoma, Geneva, Verdana, sans-serif;
+} */
+.required input{
+    max-width: 345px;
+}
+.required{
+    margin-bottom: 25px;
+}
+/* .infoTxt{
+    color: #f5d4d9b5;
+} */
+
 /**---------------------------------Media Queries --------------------**/
 
 @media screen  and (max-width:991px) {
@@ -247,7 +260,7 @@ visibility: hidden;
     .tile {
         width: 36px;
         height: 36px;
-        font-size: 12px;
+        font-size: 20px;
     }
     #digits {
         width: 315px;
@@ -257,7 +270,7 @@ visibility: hidden;
         width: 33px;
         height: 33px;
         margin: 1px;
-        font-size: 12px;
+        font-size: 20px;
     }
     .modal-cont label img{
         width: 18px;

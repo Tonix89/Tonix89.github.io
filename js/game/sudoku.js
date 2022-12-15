@@ -7,6 +7,7 @@ let level = 1;
 let nextLevel = 2;
 let eachDigit = 9;
 let digits = true;
+let once = true;
 
 // console.log(url);
 async function apiCall() {
@@ -41,11 +42,9 @@ apiCall();
 
 function setGame(preFilledTiles) {
   // console.log(preFilledTiles.length);
-  // Digits 1-9
   if (digits) {
     digits = false;
     for (let i = 1; i <= 9; i++) {
-      //<div id="1" class="number">1</div>
       let number = document.createElement("div");
       number.id = i;
       number.innerText = i;
@@ -55,7 +54,6 @@ function setGame(preFilledTiles) {
     }
   }
 
-  // Board 9x9
   for (let r = 0; r < preFilledTiles.length; r++) {
     for (let c = 0; c < preFilledTiles.length; c++) {
       // console.log(preFilledTiles.length);
@@ -75,7 +73,9 @@ function setGame(preFilledTiles) {
       if (c == 2 || c == 5) {
         tile.classList.add("vertical-line");
       }
-      tile.addEventListener("click", selectedTile);
+      if (once) {
+        tile.addEventListener("click", selectedTile);
+      }
       tile.classList.add("tile");
       document.getElementById("board" + level).appendChild(tile);
     }
@@ -119,8 +119,7 @@ async function selectedTile() {
         return;
       }
 
-      // "0-0" "0-1" .. "3-1"
-      let coords = this.id.split("-"); //["0", "0"]
+      let coords = this.id.split("-");
       let r = parseInt(coords[0]);
       let c = parseInt(coords[1]);
       // console.log(r);
@@ -142,6 +141,7 @@ async function selectedTile() {
           numSelected = null;
         }
         if (singleTile.length === allTile.length) {
+          errors = 0;
           setTimeout(() => {
             alert(
               "Congratulation, you finished Level:" +
@@ -162,7 +162,6 @@ async function selectedTile() {
             level += 1;
             nextLevel += 1;
             eachDigit += 9;
-            errors = 0;
             document.getElementById("errors1").style.display = "inline";
             document.getElementById("errors2").style.display = "inline";
             document.getElementById("level").innerText = level;
@@ -177,8 +176,10 @@ async function selectedTile() {
         document.getElementById("errors" + errors).style.display = "none";
         this.style.backgroundColor = "red";
         if (errors === 3) {
+          once = false;
+          errors = 0;
           setTimeout(() => {
-            alert("Sorry, you made 3 mistakes.");
+            alert("Sorry, you made 3 mistakes. You have to do it again.");
             const insertedN = document.querySelectorAll(".inserted");
             insertedN.forEach((ins) => {
               ins.innerText = "";
@@ -192,14 +193,16 @@ async function selectedTile() {
               digs.classList.remove("hideDigit");
               digs.classList.remove("number-selected");
             });
-            document.getElementById("errors").innerText = 0;
-            errors = 0;
+            document.getElementById("errors1").style.display = "inline";
+            document.getElementById("errors2").style.display = "inline";
+            document.getElementById("errors3").style.display = "inline";
+            once = true;
           }, 1000);
         }
       }
     }
   } catch (error) {
-    // console.log(error);
+    console.log(error);
     boardCont.innerHTML = message("error", error);
   }
 }

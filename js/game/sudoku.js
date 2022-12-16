@@ -1,7 +1,8 @@
 import { message } from "../message/message.js";
+import { numSelected } from "../extra/select.js";
+import { selectNumber } from "../extra/select.js";
 const boardCont = document.querySelector(".board");
 
-let numSelected = null;
 let errors = 0;
 let level = 1;
 let nextLevel = 2;
@@ -80,15 +81,6 @@ function setGame(preFilledTiles) {
       document.getElementById("board" + level).appendChild(tile);
     }
   }
-}
-
-function selectNumber() {
-  // console.log(numSelected);
-  if (numSelected != null) {
-    numSelected.classList.remove("number-selected");
-  }
-  numSelected = this;
-  numSelected.classList.add("number-selected");
 }
 
 async function selectedTile() {

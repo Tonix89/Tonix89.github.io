@@ -1,4 +1,6 @@
 import { message } from "../message/message.js";
+import { numSelected } from "../extra/select.js";
+import { selectNumber } from "../extra/select.js";
 
 const dateCont = document.querySelector(".date-cont");
 const date = document.getElementById("date");
@@ -55,14 +57,11 @@ timeApi();
 function getDate(sheetsDateResult) {
   for (let r = 1; r < sheetsDateResult.length; r++) {
     for (let c = 0; c < 8; c++) {
-      // console.log(preFilledTiles.length);
-      // console.log(r);
-      // console.log(c);
-      // console.log(preFilledTiles[r][c]);
       let dateTile = document.createElement("div");
       if (sheetsDateResult[r][c]) {
         dateTile.innerText = sheetsDateResult[r][c];
         dateTile.setAttribute("values", sheetsDateResult[r][c]);
+        dateTile.addEventListener("click", selectNumber);
       }
       if (sheetsDateResult[r][c] === sheetsDateResult[r][0]) {
         dateTile.classList.add("week-number");
@@ -78,18 +77,6 @@ function getDate(sheetsDateResult) {
           dateTile.classList.add("weekend");
         }
       }
-      //   if (sheetsResult[r][6] || sheetsResult[r][7]) {
-      //     tile.classList.add("weekend");
-      //   }
-      //   if (r == 2 || r == 5) {
-      //     tile.classList.add("horizontal-line");
-      //   }
-      //   if (c == 2 || c == 5) {
-      //     tile.classList.add("vertical-line");
-      //   }
-      //   if (once) {
-      //     tile.addEventListener("click", selectedTile);
-      //   }
       dateTile.classList.add("dateTile");
       date.appendChild(dateTile);
     }

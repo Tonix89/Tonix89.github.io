@@ -49,14 +49,29 @@
                                     <h4 id="messageSent"></h4>
                                     <form id="contactForm">
                                         <div class="required d-flex flex-column text-end">
-                                            <label class="d-flex justify-content-between align-items-center">Fullname (Required)<input name="fullname" id="fullname" class="w-50 text-end"/></label>
-                                            <div class="infoTxt">Ex. John Doe</div>
                                             <div class="formError" id="fullnameError">Please enter your fullname</div>
-                                        </div>
+                                            </div>
+                                            <label class="d-flex justify-content-between align-items-center">Fullname (Required)<input name="fullname" id="fullname" class="w-50 text-end"/></label>
+                                            <div class="infoTxt text-end mb-3">Ex. John Doe</div>
                                         <div class="required d-flex flex-column text-end">
-                                            <label class="d-flex justify-content-between align-items-center">Email (Required)<input name="email" id="email" class="w-50 text-end"/></label>
-                                            <div class="infoTxt">Ex. Johndoe@yahoo.com</div>
                                             <div class="formError" id="emailError">Please enter a valid email address</div>
+                                            <label class="d-flex justify-content-between align-items-center">Email (Required)<input name="email" id="email" class="w-50 text-end"/></label>
+                                            <div class="infoTxt mb-3">Ex. Johndoe@yahoo.com</div>
+                                        </div>
+                                        <div class="date-cont board d-flex flex-column text-center">
+                                            <h6>Choose Date</h6>
+                                            <div id="date"></div>
+                                            <div class="dropdown mt-4">
+                                                
+                                                <div class="d-flex justify-content-center mb-3">
+                                                    <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                                                        Choose Time
+                                                       </button>
+                                                    <ul class="dropdown-menu p-1 text-bg-light text-center" aria-labelledby="dropdownMenuButton1" id="time">
+                                                    </ul>
+                                                    <input type="text" id="time-input" class="ms-2">
+                                                </div>
+                                            </div>
                                         </div>
                                         <div class="modal-footer d-flex flex-column align-items-center">
                                             <button type="button" class="btn btn-primary">Submit</button>
@@ -75,6 +90,6 @@
         <p class="mb-0">Copyright &copy; Tonix2022</p>
         <p>All rights reserved.</p>
     </footer>
-    <!-- <script src="js/animation/typewriter.js"></script> -->
+    <script src="js/appointment/appoinment.js" type="module"></script>
 </body>
 </html>

@@ -227,19 +227,56 @@ visibility: hidden;
 /**-------------------------------- Booked Appoinment---------------**/
 .formError{
     display: none;
+    flex-direction: column;
+    text-align: end;
     color: red;
+}
+#date {
+    width: 420px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.dateTile {
+    width: 48px; 
+    height: 48px;
+    border: 1px solid #273141;
+    /* font: bold 20px "Segoe ui","Tahoma"; */
+    color: #273141;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+.week-number{
+    background-color: rgb(146, 146, 146);
+    color: white;
+}
+.weekend{
+    background-color: rgb(255, 1, 1);
+    color: white;
+}
+.week-header{
+    background-color: #273141;
+    color: #fff;
+    border: 2px solid black;
+}
+.timeList{
+    cursor: pointer;
+}
+#time-input{
+    width: 100px;
 }
 /* .required label{
     display: flex;
     flex-direction: column;
     font-family: 'Segoe UI Bold', Tahoma, Geneva, Verdana, sans-serif;
 } */
-.required input{
+/* .required input{
     max-width: 345px;
-}
-.required{
-    margin-bottom: 25px;
-}
+} */
+
 /* .infoTxt{
     color: #f5d4d9b5;
 } */

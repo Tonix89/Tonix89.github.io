@@ -269,7 +269,11 @@ visibility: hidden;
     width: 100px;
 }
 .date-selected {
-    background-color: green;
+    background-color: rgb(13, 255, 13);
+    color: #fff;
+}
+#messageSent{
+    color:#273141
 }
 /* .required label{
     display: flex;
@@ -316,11 +320,11 @@ visibility: hidden;
         width: 18px;
     }
     #date {
-        width: 245px;
+        width: 320px;
     }
     .dateTile{
-        width:30px;
-        height:30px;
+        width:36px;
+        height:36px;
         font-size:15px;
     }
 }

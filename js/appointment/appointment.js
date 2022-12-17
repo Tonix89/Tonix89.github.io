@@ -136,7 +136,7 @@ function preventDefault(e) {
   if (
     validateEmail(email.value) === true &&
     validateLength(fullName.value, 5) === true &&
-    dateChoosen === true &&
+    dateChoosen &&
     timeChoosen !== "undefined"
   ) {
     const data = {
@@ -258,7 +258,7 @@ function validateEmail(email) {
 }
 
 async function postData(data) {
-  const response = await fetch(postUr, {
+  const response = await fetch(postUrl, {
     method: "POST",
     mode: "cors",
     cache: "no-cache",

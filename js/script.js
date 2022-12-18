@@ -1,8 +1,8 @@
 const textCont = document.getElementsByClassName("typewrite");
 const game = document.getElementsByClassName("typewrite-game");
 const index = document.getElementsByClassName("typewrite-index");
-console.log(game.length);
-console.log(index.length);
+// console.log(game.length);
+// console.log(index.length);
 
 const textData1 = [
   "Hi, I'm a Front-End Developer.",

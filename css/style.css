@@ -2,6 +2,9 @@
     font-family: 'Kalam', cursive;
     src: url("https://fonts.googleapis.com/css2?family=Kalam:wght@700&display=swap");
 }
+*{
+    box-sizing: border-box;
+}
 
 body{
     font-family: 'Kalam', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
@@ -41,7 +44,7 @@ sup{
 }
 .name-main-fdiv{
     background-color:#273141;
-    height:100vh; 
+    min-height:100vh; 
     max-width: 300px;
 }
 #mypic{
@@ -62,7 +65,7 @@ sup{
     border-radius: 0 5px 5px 0;
     color: white;
     padding: 5px 10px;
-    width: fit-content;
+    width: 250px;
     font-style: italic;
 }
 .personal-background p, .personal-background li{
@@ -81,6 +84,9 @@ nav li a{
 }
 .nav-active{
     text-decoration: underline;
+}
+.carousel-text{
+    text-indent: 2rem;
 }
 .email{
     text-decoration: none;
@@ -103,9 +109,7 @@ nav li a{
 }
 
 /**---------------------------- Typewriter Effect----------------**/
-/* .typewrite .wrap{
-    border-right: 0.3em solid #fff;
-} */
+
 .typewrite .wrap{
     animation:blinkTextCursor 500ms steps(44) infinite normal;
   }
@@ -222,6 +226,12 @@ visibility: hidden;
     display: none;
     background-color: #273141;
     border: 1px solid #fff;
+}
+#email-icon{
+    background-color: #273141;
+}
+.aboutme-parag{
+    text-indent: 3rem;
 }
 
 /**-------------------------------- Booked Appoinment---------------**/

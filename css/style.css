@@ -275,18 +275,12 @@ visibility: hidden;
 #messageSent{
     color:#273141
 }
-/* .required label{
-    display: flex;
-    flex-direction: column;
-    font-family: 'Segoe UI Bold', Tahoma, Geneva, Verdana, sans-serif;
-} */
-/* .required input{
-    max-width: 345px;
-} */
-
-/* .infoTxt{
-    color: #f5d4d9b5;
-} */
+#dateError{
+    text-align: center;
+}
+#sending{
+    display: none;
+}
 
 /**---------------------------------Media Queries --------------------**/
 

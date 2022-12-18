@@ -1,6 +1,6 @@
 # Portfolio
 
-![image](https://github.com/Tonix89/Tonix89.github.io/blob/main/portfolio.png)
+[image](https://github.com/Tonix89/Tonix89.github.io/blob/main/portfolio.png)
 
 ## Description
 This Portfolio is part of my second semester school exam in my front-end development at Noroff school of technology and digital media.
@@ -14,8 +14,6 @@ What is in my portfolio:
 
 ## Built With
 
-You can list a the tech stack that you've used over here
-
 - HTML 5
 - CSS 3
 - JavaScript
@@ -24,8 +22,6 @@ You can list a the tech stack that you've used over here
 ## Getting Started
 
 ### Installing
-
-This is where you list how to get the project started. It typically just includes telling a person to clone the repo and then to install the dependencies e.g.
 
 1. Clone the repo:
 
@@ -42,8 +38,6 @@ git clone https://github.com/Tonix89/Tonix89.github.io.git
 - [Sudoku Tutorial](https://www.youtube.com/watch?v=S4uRtTb8U-U&t=1633s)
 
 ## Contact
-
-This is where you can leave your social links for people to contact you, such as a LinkedIn profile or Twitter link e.g.
 
 [My Facebook page](https://www.facebook.com/tonixzz/)
 

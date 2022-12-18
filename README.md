@@ -1,6 +1,6 @@
 # Portfolio
 
-[image](https://github.com/Tonix89/Tonix89.github.io/blob/main/portfolio.png)
+![image](https://github.com/Tonix89/Tonix89.github.io/blob/main/portfolio.png)
 
 ## Description
 This Portfolio is part of my second semester school exam in my front-end development at Noroff school of technology and digital media.
